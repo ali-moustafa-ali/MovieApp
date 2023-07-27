@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RobotoCondensed-Bold.ttf">
+            <string>RobotoCondensed-Bold</string>
+        </array>
+        <array key="RobotoCondensed-Regular.ttf">
+            <string>RobotoCondensed-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gTV-IL-0wX" customClass="MoviesCVC" customModule="TMDBAli" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="1038" height="480"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="1038" height="480"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Acb-Bb-hCa">
+                        <rect key="frame" x="0.0" y="0.0" width="1038" height="480"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Dd0-XD-oKe">
+                                <rect key="frame" x="5" y="5" width="1028" height="470"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fastX" translatesAutoresizingMaskIntoConstraints="NO" id="csM-w3-vOO">
+                                        <rect key="frame" x="0.0" y="0.0" width="415.33333333333331" height="470"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vIB-5n-aC1" userLabel="Stack detial">
+                                        <rect key="frame" x="420.33333333333331" y="0.0" width="607.66666666666674" height="470"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="movie's name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tI9-yu-RkP">
+                                                <rect key="frame" x="0.0" y="0.0" width="81" height="17.666666666666668"/>
+                                                <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="egq-Fz-mup">
+                                                <rect key="frame" x="0.0" y="27.666666666666664" width="135.66666666666666" height="49.999999999999993"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2dQ-bl-muL" userLabel="Vote Average View" customClass="CircleProgressView" customModule="TMDBAli" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VhD-FZ-omn">
+                                                                <rect key="frame" x="14.333333333333369" y="15" width="21.333333333333329" height="20"/>
+                                                                <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="17"/>
+                                                                <color key="textColor" red="1" green="0.37254901959999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="1DL-H6-aiF"/>
+                                                            <constraint firstAttribute="height" constant="50" id="78o-rC-GN2"/>
+                                                            <constraint firstItem="VhD-FZ-omn" firstAttribute="centerY" secondItem="2dQ-bl-muL" secondAttribute="centerY" id="faI-pE-dNf"/>
+                                                            <constraint firstItem="VhD-FZ-omn" firstAttribute="centerX" secondItem="2dQ-bl-muL" secondAttribute="centerX" id="nAe-tu-uue"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2022-10-19" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAR-d4-3XN">
+                                                        <rect key="frame" x="60.000000000000007" y="0.0" width="75.666666666666686" height="50"/>
+                                                        <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rpg-4D-4Ls">
+                                                <rect key="frame" x="0.0" y="87.666666666666657" width="607.66666666666663" height="382.33333333333337"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Dd0-XD-oKe" firstAttribute="leading" secondItem="Acb-Bb-hCa" secondAttribute="leading" constant="5" id="0rK-Ev-lHD"/>
+                            <constraint firstItem="Dd0-XD-oKe" firstAttribute="top" secondItem="Acb-Bb-hCa" secondAttribute="top" constant="5" id="PwE-2A-ktZ"/>
+                            <constraint firstItem="csM-w3-vOO" firstAttribute="width" secondItem="Acb-Bb-hCa" secondAttribute="width" multiplier="0.4" id="lA4-SY-Tzf"/>
+                            <constraint firstAttribute="bottom" secondItem="Dd0-XD-oKe" secondAttribute="bottom" constant="5" id="qLx-hB-8hz"/>
+                            <constraint firstAttribute="trailing" secondItem="Dd0-XD-oKe" secondAttribute="trailing" constant="5" id="xev-BG-AzO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Acb-Bb-hCa" secondAttribute="trailing" id="Fc5-A6-tQC"/>
+                <constraint firstAttribute="bottom" secondItem="Acb-Bb-hCa" secondAttribute="bottom" id="Nc8-kt-FCk"/>
+                <constraint firstItem="Acb-Bb-hCa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="VHc-QD-eeb"/>
+                <constraint firstItem="Acb-Bb-hCa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vMa-vf-Idw"/>
+            </constraints>
+            <size key="customSize" width="1038" height="480"/>
+            <connections>
+                <outlet property="VoteAverageView" destination="2dQ-bl-muL" id="lHY-eZ-XPL"/>
+                <outlet property="movieDateLabel" destination="xAR-d4-3XN" id="jGe-EI-o99"/>
+                <outlet property="movieImageView" destination="csM-w3-vOO" id="qet-Xg-QRV"/>
+                <outlet property="movieOverviewTextView" destination="Rpg-4D-4Ls" id="FUF-vE-8bl"/>
+                <outlet property="movieTitleLabel" destination="tI9-yu-RkP" id="xjc-hC-aeC"/>
+                <outlet property="moviesVoteAverageLabel" destination="VhD-FZ-omn" id="71p-gR-bse"/>
+            </connections>
+            <point key="canvasLocation" x="632.06106870229007" y="171.12676056338029"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="fastX" width="500" height="750"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

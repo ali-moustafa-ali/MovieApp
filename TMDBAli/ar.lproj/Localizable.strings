@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  TMDBAli
+
+  Created by Ali Moustafa on 04/07/2023.
+  
+*/
+"movies_label_text" = "الأفلام";
+"movies_tab_title" = "الأفلام";
+"discover_tab_title" = "اكتشف";
+
+
+"popular_segment_title" = "الأكثر شهرة";
+"toprated_segment_title" = "الأعلى تقييمًا";
+"upcoming_segment_title" = "القادمة";
+"nowplaying_segment_title" = "قيد التشغيل الآن";
+
+
+"popular_segment_title" = "الشهيرة";
+"toprated_segment_title" = "الأعلى تقييمًا";
+"upcoming_segment_title" = "القادمة";
+"nowplaying_segment_title" = "الآن تعرض";
